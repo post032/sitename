@@ -125,48 +125,9 @@
 }
 @keyframes bounce {
   0% {
-    transform: skewX(-90deg);
+    transform: translateY(-200px);
   }
 }
-//////////////
-
-// .menu {
-//   &__range {
-//     display: none;
-//     -webkit-appearance: none;
-//     outline: none;
-//     position: relative;
-//     width: 60px;
-//     height: 30px;
-//     border-radius: 20px;
-//     overflow: hidden;
-//     transition: background 0.2s ease;
-//     background: #dbdbdb;
-//
-//     &::-webkit-slider-thumb {
-//       -webkit-appearance: none;
-//       background-repeat: no-repeat;
-//       width: 25px;
-//       height: 25px;
-//       border-radius: 50%;
-//       cursor: pointer;
-//       transition: background 0.2s ease;
-//       background-color: #ffffff;
-//       background-repeat: no-repeat;
-//       background-position: 7px 7px;
-//     }
-//
-//     &--night {
-//       background-color: #3538cb;
-//
-//       &::-webkit-slider-thumb {
-//         background: #ffffff;
-//         background-repeat: no-repeat;
-//         background-position: 4px 4px;
-//       }
-//     }
-//   }
-// }
 
 .menu__logo-link {
   font-family: "Montserrat", sans-serif;
@@ -187,12 +148,14 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  background: #ffffff;
+  align-items: center;
 }
 
 .menu__list {
   padding: 8px 0;
   display: flex;
-  background: #ffffff;
+
 }
 
 .menu__link {
@@ -214,17 +177,30 @@
 .menu__logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 16px;
-  padding-top: 35px;
+  // padding-top: 35px;
+  position: relative;
+  z-index: 1001;
+  min-height: 60px;
 }
-// .menu__hidden {
-//   position: absolute;
-// }
+
+.menu__toggles {
+  width: 78px;
+}
+
+.menu__toggle {
+  border: none;
+  color: none;
+  outline: none;
+  background: none;
+}
 @media (min-width: @size-tablet) {
   .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 100px;
   }
 
   .menu__range {
@@ -248,8 +224,7 @@
   }
 
   .menu__logo {
-    width: 148px;
-    margin-right: 0;
+    width: 160px;
   }
 
   .menu__lists {
@@ -259,13 +234,18 @@
 
   .menu__list {
     align-items: center;
-    margin-right: 30px;
     padding: 0;
     background: none;
   }
 
+  .menu__list:not(:last-child) {
+    margin-right: 30px;
+  }
+
+
   .menu__link {
-    padding-top: 30px;
+    padding-top: 0;
+    margin-top: 10px;
   }
 
   .menu__logo-link {
@@ -285,6 +265,7 @@
 @media (min-width: @size-desktop) {
   .menu {
     justify-content: flex-start;
+    min-height: 123px;
   }
   .menu__logo-link {
     font-size: 48px;
@@ -299,18 +280,23 @@
   }
 
   .menu__logo {
-    padding-top: 35px;
+    padding-top: 0;
     width: 248px;
     margin: 0;
+    align-items: center;
   }
 
   .menu__lists {
     margin-right: 0;
-    margin-left: 55px;
+    margin-left: 30px;
   }
 
-  // .menu__link {
-  //   padding-top: 48px;
-  // }
+  .menu__link {
+    padding-top: 0;
+  }
+
+  .menu__hidden {
+    justify-content: flex-end;
+  }
 
 }
