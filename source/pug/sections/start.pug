@@ -1,0 +1,22 @@
+div.start__bg
+  div.container 
+    section.start
+      h2.start__title Начните работу<br> в лучшей команде сегодня
+      p.start__text Оставьте заявку, наш<br> HR-менеджер свяжется с вами в течение 15 минут
+      form(action="" method="post").start__form
+        div.start__element
+          select.start__select
+            option(selected="selected") Выберите специальность
+            option Выберите специальность 2
+            option Выберите специальность 3
+        div.start__block
+          input(type="text" name="name-start" id="name-start" placeholder="Ваше имя" required).start__input
+          label(for="name-start").visually-hidden Ваше имя
+          input(type="tel" name="phone-start" id="phone-start" placeholder="Номер телефона" required).start__input
+          label(for="phone-start").visually-hidden Номер телефона
+        div.start__consent
+          input(type="checkbox" name="consent" id="checkbox" checked).start__checkbox
+          label(for="checkbox") 
+            p Согласие на  
+              a(href="#") обработку персональных данных
+        input(type="submit" value="Стать инвестором").start__submit

@@ -1,0 +1,18 @@
+div.connect__bg
+  div.container
+    section.connect
+      h2.connect__title Присоединяйтесь<br> к лучшим
+      p.connect__description Станьте инвестором, меняйте диджитал прямо сейчас
+      form(action="" method="post").connect__form
+        input(type="text" name="name" id="name" placeholder="Ваше имя" required).connect__input
+        label(for="name").visually-hidden Ваше имя
+        input(type="tel" name="phone" id="phone" placeholder="Ваш телефон" required).connect__input
+        label(for="phone").visually-hidden Ваш телефон
+        input(type="email" name="email" id="email" placeholder="Ваш e-mail" required).connect__input
+        label(for="email").visually-hidden Ваш e-mail
+        div.connect__consent
+          input(type="checkbox" name="consent" id="checkbox" checked).connect__checkbox
+          label(for="checkbox") 
+            p Согласие на  
+              a(href="#") обработку персональных данных
+        input(type="submit" value="Стать инвестором").connect__submit

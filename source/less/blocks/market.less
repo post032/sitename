@@ -1,0 +1,212 @@
+.market__bg {
+  background-color: #ffffff;
+  background: url("../img/market.png"), url("../img/market1-m.png") 177px 77px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 425px) {
+  background-size: cover;
+}
+
+.market {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 83px;
+  padding-bottom: 50px;
+}
+
+.market__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 5px;
+}
+
+.market__text {
+  .text-m;
+  margin-top: 7px;
+  margin-bottom: 24px;
+}
+
+.market__block {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.market__block-img {
+  display: none;
+}
+
+.market__input {
+  width: 286px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #7854FE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.market__input,
+.market__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292929;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.market__button {
+  .button-m;
+  .button-name-m;
+}
+
+.market__checkbox label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 120%;
+  color: #292929;
+}
+
+.market__connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.market__text br {
+  display: none;
+}
+@media (min-width: @size-tablet) {
+  .market__bg {
+    background: url("../img/market-big.png") top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .market {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .market__title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .market__text {
+    margin-bottom: 33px;
+    width: 80%;
+  }
+
+  .market__block {
+    width: 61%;
+    align-items: center;
+  }
+
+  .market__block-img {
+    display: block;
+  }
+
+  .market__input,
+  .market__input::placeholder {
+    font-size: 20px;
+  }
+
+  .market__img {
+    width: 260px;
+    height: 436px;
+    margin-top: 60px;
+  }
+
+  .market__text br {
+    display: inline-block;
+  }
+}
+@media (min-width: @size-desktop) {
+  .market__bg {
+    background: url("../img/market1.png") right bottom,
+                url("../img/market2.png"),
+                url("../img/market-big.png") top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .market {
+    padding-bottom: 74px;
+  }
+
+  .market__block {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+
+  .market__connect {
+    flex-direction: row;
+  }
+
+  .market__input {
+    margin-bottom: 0;
+    width: 289px;
+  }
+
+  .market__button {
+    .button-t;
+    .button-name-t;
+  }
+
+  .market__checkbox {
+    margin-top: 17px;
+  }
+
+  .market__img {
+    width: 340px;
+    height: 569px;
+    margin-top: 101px;
+  }
+
+  .market__title {
+    font-size: 52px;
+    line-height: 63px;
+    margin-top: 238px;
+  }
+
+  .market__text {
+    .text-t;
+    margin-bottom: 33px;
+  }
+
+  .market__checkbox label {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .market__button:focus,
+  .market__button:hover {
+    background: #FFFFFF;
+    border: 2px solid #7854FE;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #7854FE;
+  }
+}
+
+@media (min-width: 1920px) {
+  .market__bg {
+    background: url("../img/market1.png") right bottom,
+                url("../img/market2.png"),
+                url("../img/market3.png") 36px 100px,
+                url("../img/market-big.png") top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}

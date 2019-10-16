@@ -1,0 +1,116 @@
+.data__bg {
+  background-color: #332E56;
+}
+
+.data {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-bottom: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data__title {
+  .title-m;
+  color: #ffffff;
+  margin-top: 59px;
+  margin-bottom: 20px;
+}
+
+.data__lists {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data__list {
+  width: 288px;
+  min-height: 124px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data__list:first-child {
+  background-image: url("../img/data11-m.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.data__list:last-child {
+  background-image: url("../img/data41-m.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.data__list span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #332E56;
+}
+
+.data__list p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+  color: #292929;
+  margin: 0;
+}
+@media (min-width: @size-tablet) {
+  .data__bg {
+    background: url("../img/data1.png") left bottom,
+                url("../img/data2.png") right bottom,
+                url("../img/data3.png") right;
+    background-repeat: no-repeat;
+    background-color: #332E56;
+  }
+  .data__list {
+    width: 270px;
+    margin: 16px;
+  }
+
+  .data__lists {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 604px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .data__bg {
+    // background-image: url("../img/block1.png");
+  }
+  .data {
+    padding-top: 63px;
+    padding-bottom: 105px;
+  }
+  .data__title {
+    .title-t;
+    margin-bottom: 29px;
+  }
+
+  .data__list {
+    margin: 0;
+    min-height: 155px;
+  }
+
+  .data__lists {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

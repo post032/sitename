@@ -1,0 +1,113 @@
+.work {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 78px;
+}
+.work__bg {
+  background: url("../img/work-m.png") no-repeat -12% 245px;
+}
+
+.work__title {
+  .title-m;
+  margin-bottom: 42px;
+}
+
+.work__video {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work__play {
+  position: relative;
+  width: 90%;
+}
+
+.work__button {
+  width: 96px;
+  height: 96px;
+  background-color: rgba(120, 84, 254, 0.7);
+  background-image: url("../img/video.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work__link {
+  display: none;
+}
+
+@media (min-width: @size-tablet) {
+  .work__bg {
+    background: url("../img/work.png") no-repeat -6% 420px;
+  }
+  .work__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button-m;
+    .button-name-m;
+  }
+
+  .work__play {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work__video {
+    width: 700px;
+    height: 465px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .work__bg {
+    background: url(../img/work.png) no-repeat 16% 590px;
+  }
+  .work {
+    padding-top: 82px;
+    padding-bottom: 120px;
+  }
+  .work__title {
+    .title-t;
+    margin-bottom: 63px;
+  }
+
+  .work__link {
+    .button-t;
+    .button-name-t;
+  }
+
+  .work__button:hover,
+  .work__button:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../img/video-h.svg");
+    border: 8px solid rgba(120, 84, 254, 0.7);
+  }
+
+  .work__link:hover,
+  .work__link:focus {
+    background: #FFFFFF;
+    border: 2px solid #7854FE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #7854FE;
+    min-height: 44px;
+  }
+
+  .work__video {
+    width: 1100px;
+    height: 480px;
+    border-radius: 5px;
+  }
+}

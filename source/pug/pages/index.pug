@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru-Ru")
+  head 
+    meta(charset="UTF-8")
+    title SiteName
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.min.css")
+    
+
+  body
+    header.header__page
+      include ../sections/menu
+    main.main__page
+      include ../sections/market
+      include ../sections/data
+      include ../sections/work
+      include ../sections/advantage
+      include ../sections/comments
+      include ../sections/load
+      include ../sections/faq
+      include ../sections/connect
+      include ../sections/start
+      include ../sections/map
+    include ../sections/footer
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="https://code.jquery.com/jquery-migrate-1.4.1.min.js")
+    script(src="js/slick.min.js")
+    script(src="js/script.js")

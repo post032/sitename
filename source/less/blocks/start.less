@@ -1,0 +1,259 @@
+.start__bg {
+    background: url("../img/start-mr.png") no-repeat right;
+}
+
+
+.start {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.start__title {
+  .title-m;
+  color: #131313;
+  margin-bottom: 5px;
+}
+
+.start__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #131313;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+.start__form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  position: relative;
+}
+
+.start__input {
+  margin-bottom: 16px;
+}
+
+.start__input,
+.start__select {
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #7854FE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292929;
+}
+
+.start__element {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.start__block {
+  width: 100%;
+}
+
+.start__element::after {
+  content: "";
+  width: 12px;
+  height: 8px;
+  display: block;
+  background: url("../img/polygon.png") no-repeat;
+  position: absolute;
+  top: 22px;
+  right: 16px;
+}
+
+.start__submit {
+  .button-name-m;
+  .button-m;
+}
+
+.start__consent label p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292929;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-bottom: 13px;
+  width: 90%;
+
+  a {
+    color: #7854FE;
+    text-decoration: underline;
+    // padding-left: 29px;
+    // margin-left: 18px;
+  }
+}
+
+.start__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.start__checkbox + label {
+  position: relative;
+  padding-left: 29px;
+  top: -7px;
+  left: -1px;
+  cursor: pointer;
+  // margin-left: 18px;
+}
+
+.start__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #7854FE;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.start__checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.start__checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 6px;
+  height: 4px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  opacity: 0;
+  transition: all 0.2s;
+}
+@media (min-width: @size-tablet) {
+  .start__bg {
+      background: url("../img/start-l.png") no-repeat left,
+                  url("../img/start-rt.png") no-repeat right top;
+  }
+
+  .start__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 560px;
+  }
+
+  .start__element {
+    width: 560px;
+    margin-bottom: 20px;
+  }
+
+  .start__input {
+    width: 270px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #7854FE;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .start__consent label p {
+    width: 100%;
+  }
+
+  .start__text br,
+  .start__title br {
+    display: none;
+  }
+}
+@media (min-width: @size-desktop) {
+  .start__bg {
+      background: url("../img/start-l.png") no-repeat left,
+                  url("../img/start-rb.png") no-repeat right 140%,
+                  url("../img/start-rt.png") no-repeat right top;
+  }
+  
+  .start {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 118px;
+    align-items: flex-start;
+  }
+
+  .start__form {
+    align-items: flex-start;
+  }
+
+  .start__input {
+    margin-bottom: 20px;
+  }
+
+  .start__title {
+    .title-t;
+    text-align: left;
+    width: 700px;
+  }
+
+  .start::after {
+    content: "";
+    width: 350px;
+    height: 639px;
+    display: block;
+    background: url("../img/woman.png") no-repeat;
+    position: absolute;
+    right: 78px;
+    top: 45px;
+  }
+
+  .start__text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 160%;
+    width: 500px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+  }
+
+  .start__submit {
+    .button-name-t;
+    .button-t;
+    width: 100%;
+  }
+
+  .start__submit:hover,
+  .start__submit:focus {
+    background: #FFFFFF;
+    border: 2px solid #7854FE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #7854FE;
+  }
+}

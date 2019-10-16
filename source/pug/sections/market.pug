@@ -1,0 +1,16 @@
+div.market__bg
+  section(id="start").market.container
+    div.market__block
+      h1.market__title Альтернативный маркет
+      p.market__text Текст описания проекта в несколько строк, который должен занимать примерно 4-6 строк, в общих чертах описана суть. <br>Станьте частью бизнеса прямо сейчас
+      form(action="" method="post")
+        div.market__connect
+          input(id="mail" type="email" name="email" placeholder="Ваш e-mail" required).market__input
+          label(for="mail").visually-hidden Email
+          input(type="submit" value="Стать инвестором").market__button
+        div.market__checkbox
+          input(id="ok" type="checkbox" checked)
+          label(for="ok") Согласие на обработку 
+            a(href="#") персональных данных
+    div.market__block-img
+      img(src="img/iPhone.png" alt="телефон").market__img

@@ -1,0 +1,215 @@
+.connect__bg {
+    background: url("../img/connect-m.png") no-repeat left top;
+  background-color: #332E56;
+  position: relative;
+  z-index: 1;
+}
+
+.connect {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect__title {
+  .title-m;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.connect__description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  width: 90%;
+}
+
+.connect__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.connect__input {
+  width: 85%;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292929;
+  outline: none;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.connect__consent label p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 80%;
+
+  a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    // padding-left: 29px;
+    // margin-left: 18px;
+  }
+}
+
+.connect__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.connect__checkbox + label {
+  position: relative;
+  padding-left: 29px;
+  top: 0;
+  left: -1px;
+  cursor: pointer;
+  margin-left: 18px;
+}
+
+.connect__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.connect__checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.connect__checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 6px;
+  height: 4px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #7854FE;
+  border-left: 2px solid #7854FE;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.connect__submit {
+  .button-name-m;
+  .button-m;
+}
+@media (min-width: @size-tablet) {
+  .connect__bg {
+    background: url("../img/connect-tl.png") no-repeat left top;
+    background-color: #332E56;
+  }
+
+  .connect__title br {
+    display: none;
+  }
+
+  .connect__consent {
+    width: 288px;
+  }
+
+  .connect__input {
+    width: 270px;
+  }
+
+  .connect__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 600px;
+  }
+  // .connect__checkbox + label {
+  //   position: relative;
+  //   padding-left: 20px;
+  //   top: 0;
+  //   left: -1px;
+  //   cursor: pointer;
+  //   margin-left: 0;
+  // }
+}
+@media (min-width: @size-desktop) {
+  .connect {
+    padding-top: 80px;
+    padding-bottom: 156px;
+  }
+
+  .connect__form {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .connect__consent {
+    width: 500px;
+    position: absolute;
+    top: 63px;
+    left: 343px;
+
+    label p {
+      margin-top: 4px;
+    }
+  }
+
+  .connect__title {
+    .title-t;
+  }
+
+  .connect__description {
+    font-size: 20px;
+    line-height: 160%;
+    margin-top: 2px;
+    margin-bottom: 30px;
+  }
+
+  .connect__input {
+    margin: 0;
+    width: 256px;
+  }
+  .connect__submit {
+    .button-name-t;
+    .button-t;
+  }
+
+  .connect__submit:hover,
+  .connect__submit:focus {
+    background: #FFFFFF;
+    border: 2px solid #7854FE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #7854FE;
+  }
+}
